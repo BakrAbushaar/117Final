@@ -15,8 +15,8 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.html": "htmlhint",
-    "*.css": "stylelint"
+    "docs/**/*.html": "htmlhint",
+    "docs/**/*.css": "stylelint --fix"
   },
   "keywords": [],
   "author": "",
