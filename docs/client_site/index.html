@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1F7A46" />
     <title>GreenLeaf Landscaping | Professional Lawn Care</title>
     <meta name="description" content="Professional landscaping and lawn care services for residential and commercial properties. Get a free quote today." />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GreenLeaf Landscaping | Professional Lawn Care" />
+    <meta property="og:description" content="Your dream lawn, delivered. Professional landscaping services starting at $50/week." />
+    <meta property="og:image" content="https://placehold.co/1200x630/1F7A46/FFFFFF/png?text=GreenLeaf" />
+    
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
     <header>
         <div class="container">
@@ -18,7 +27,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
@@ -55,7 +64,7 @@
                     <h2 class="text-center mb-20">Get Your Free Estimate</h2>
                     <p class="text-center mb-30">Fill out the form below and we'll get back to you within 24 hours.</p>
                     
-                    <form action="https://hooks.zapier.com/hooks/catch/123456/abcdef/" method="POST">
+                    <form action="https://hooks.zapier.com/hooks/catch/123456/abcdef/" method="POST" aria-label="Quote request form">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required />
