@@ -1,347 +1,196 @@
-# 🎓 IS117 Final Project: Professional Web Portfolio System
+# GitHub Pages Multi-Site Repository
 
-> **Build three production-ready websites that demonstrate mastery of modern web development, strategic design thinking, and professional positioning in the AI era.**
+This repository contains three completely standalone websites deployed via GitHub Pages from the `/docs` directory. Each site is fully isolated with its own unique identity, content, and visual design.
 
-[![Lighthouse CI](https://img.shields.io/badge/Lighthouse-100%2F100-brightgreen)](https://github.com/GoogleChrome/lighthouse-ci)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+## 🏗️ Repository Structure
 
----
+```
+docs/
+├── index.html              # Root landing page (no links to sites)
+├── privacy.html            # Shared privacy policy
+├── 404.html               # Shared 404 error page
+│
+├── design_style/          # Site 1: Nordic Minimalism
+│   ├── index.html
+│   ├── style.css
+│   └── images/
+│       ├── gallery-1.jpg
+│       ├── gallery-2.jpg
+│       ├── gallery-3.jpg
+│       └── og-image.jpg
+│
+├── portfolio/             # Site 2: Professional Portfolio
+│   ├── index.html
+│   ├── portfolio.html
+│   ├── css/
+│   │   └── style.css
+│   └── images/
+│       ├── headshot.jpg
+│       ├── project-1.jpg
+│       ├── project-2.jpg
+│       └── og-image.jpg
+│
+└── client_site/           # Site 3: Chocolate Dessert Business
+    ├── index.html
+    ├── style.css
+    ├── site.js
+    └── images/
+        ├── product-1.jpg
+        ├── product-2.jpg
+        ├── product-3.jpg
+        ├── og-image.jpg
+        └── hero.jpg (optional)
+```
 
-## 📋 Table of Contents
+## 🎨 Site Descriptions
 
-1. [Project Overview](#-project-overview)
-2. [Live Example Sites](#-live-example-sites)
-3. [What You'll Build](#-what-youll-build)
-4. [Technical Requirements](#-technical-requirements)
-5. [Design Excellence](#-design-excellence-standards)
-6. [Quality Gates](#-quality-gates--cicd)
-7. [Final Presentation](#-final-presentation)
-8. [Submission Guidelines](#-submission-guidelines)
+### Site 1: Nordic Minimalism Design History
+**Location:** `docs/design_style/`
 
----
+A museum-style educational site exploring the history and philosophy of Nordic Minimalism in design.
 
-## 🎯 Project Overview
-
-This is your capstone project. You will design, develop, and deploy **three interconnected websites** that showcase your ability to think strategically, code professionally, and position yourself as a cutting-edge **AI Product Engineer** or **AI + X specialist** (e.g., AI + Cybersecurity, AI + UX Design, AI + Healthcare).
-
-### Why This Matters
-In today's job market, having a portfolio isn't optional—it's expected. But a *great* portfolio does more than show code. It tells a story, demonstrates strategic thinking, and proves you can ship production-quality work under real-world constraints.
-
----
-
-## 🌐 Live Example Sites
-
-Explore the reference implementation deployed on GitHub Pages:
-
-### 🏠 [**Landing Page**](https://kaw393939.github.io/117_final_fall_2025/)
-A beautiful hub connecting all three projects with smooth animations and modern design.
-
-### 💼 [**Portfolio Site: Alex Chen - AI Product Engineer**](https://kaw393939.github.io/117_final_fall_2025/portfolio/)
-**Design System:** Swiss International Style (Modernist Typography)  
-**Brand Archetype:** The Sage + The Creator  
 **Key Features:**
-- Fluid typography (16px → 20px based on viewport)
-- CSS Grid mastery with 12-column system
-- Calendly integration for consultations
-- Zapier-powered contact form
-- Responsive design with mobile-first approach
+- Calm, restrained aesthetic with soft neutrals and whitespace
+- Museum-quality presentation focused on visual storytelling
+- Semantic HTML with full accessibility support
+- System fonts only, no external dependencies
+- Responsive grid layout
 
-**Design Highlights:**
-```css
-/* Fluid Typography Example */
-font-size: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);
+**Visual Identity:** Soft whites, grays, muted tones inspired by Scandinavian nature
 
-/* Massive Heading Scale */
-h1 { font-size: clamp(3rem, 2.07rem + 4.63vw, 8rem); }
-```
+### Site 2: Professional Portfolio - Bakr Abushaar
+**Location:** `docs/portfolio/`
 
-### 🎨 [**Design Style Site: International Typographic Style**](https://kaw393939.github.io/117_final_fall_2025/design_style/)
-An educational "museum piece" exploring the Swiss design movement.  
-**Tech Focus:** Pure CSS Grid, asymmetric layouts, bold typography
+A professional cybersecurity and IT portfolio showcasing technical expertise and projects.
 
-### 🌿 [**Client Site: GreenLeaf Landscaping**](https://kaw393939.github.io/117_final_fall_2025/client_site/)
-A conversion-optimized business website featuring:
-- Sales funnel design
-- Parallax scrolling effects
-- Mobile-optimized service cards
-- Form-to-CRM pipeline (Zapier)
+**Key Features:**
+- Clean, corporate-level design
+- Cybersecurity and IT focus
+- Education, skills, and project showcase
+- Simple contact form (no backend)
+- Dark/neutral professional color palette
 
----
+**Visual Identity:** Professional blues, clean typography, technical aesthetic
 
-## 🛠 What You'll Build
+### Site 3: Noir Chocolat - Premium Chocolate Desserts
+**Location:** `docs/client_site/`
 
-### 1️⃣ Personal Portfolio (Main Site)
-Position yourself as an **AI Product Engineer** or niche specialist using:
+A fictional premium chocolate dessert business website with booking functionality.
 
-#### Strategic Elements:
-- **Brand Archetype Selection:** Choose from The Hero, The Sage, The Creator, etc.
-- **Cialdini's Persuasion Principles:** Implement:
-  - **Reciprocity:** Free audit/consultation
-  - **Scarcity:** Limited availability messaging
-  - **Authority:** Testimonials, case studies
-  - **Social Proof:** "Trusted by X startups"
+**Key Features:**
+- High-end, indulgent visual design
+- Dark chocolate/cocoa color palette
+- **Interactive calendar booking UI** (JavaScript-based, no external services)
+- Product showcase with menu
+- Standalone navigation (Home / Menu / Booking / Contact)
 
-#### Required Integrations:
-- [ ] **Calendly:** Embed a booking widget for free consultations
-- [ ] **Zapier Webhook:** Connect contact form to email/Slack/Sheets
-- [ ] **Analytics:** Google Analytics or Plausible
+**Visual Identity:** Rich browns, gold accents, elegant and modern
 
-### 2️⃣ Design Style Site
-Complete your earlier design style assignment with:
-- Fully responsive layout
-- Accurate representation of your chosen design movement
-- Museum-quality presentation
+## 🔒 Isolation Requirements
 
-### 3️⃣ Client Website
-Build a professional site for a real or fictional client:
-- Clear value proposition
-- Sales funnel (Lead Magnet → Form → Conversion)
-- Service/product showcase
-- Social proof elements
+**CRITICAL:** These three sites are completely standalone and must NOT link to each other:
 
----
+- ❌ No navigation links between sites
+- ❌ No footer links between sites
+- ❌ No "view project" or "back" links
+- ❌ No cross-references in content
+- ✅ Each site behaves as if it lives in its own repository
 
-## ⚙️ Technical Requirements
+**Shared Files Only:**
+- `docs/privacy.html` - Shared privacy policy
+- `docs/404.html` - Shared 404 error page
 
-### Tech Stack Options
-| Standard | Advanced (Optional) |
-|----------|---------------------|
-| HTML5 + CSS3 + Vanilla JS | Next.js, Astro, Eleventy |
-| GitHub Pages hosting | Custom domain (bonus) |
+## 🖼️ Image Management
 
-### Mandatory Setup
-```bash
-# Initialize project
-npm init -y
+All images are designed to be **replaceable by filename only**. Simply replace the image file with the same filename to update visuals without touching code.
 
-# Install quality tools
-npm install --save-dev htmlhint stylelint @lhci/cli husky lint-staged
+### Design Style Site Images
+- `gallery-1.jpg` - First gallery image
+- `gallery-2.jpg` - Second gallery image
+- `gallery-3.jpg` - Third gallery image
+- `og-image.jpg` - Social media preview
 
-# Setup pre-commit hooks
-npx husky install
-```
+### Portfolio Site Images
+- `headshot.jpg` - Professional headshot
+- `project-1.jpg` - First project screenshot
+- `project-2.jpg` - Second project screenshot
+- `og-image.jpg` - Social media preview
 
-### File Structure
-```
-your-repo/
-├── .github/
-│   └── workflows/
-│       └── lighthouse-ci.yml
-├── docs/                    # GitHub Pages serves from here
-│   ├── index.html          # Landing page
-│   ├── portfolio/
-│   ├── design_style/
-│   └── client_site/
-├── .htmlhintrc
-├── .stylelintrc.json
-├── lighthouserc.json
-└── package.json
-```
+### Client Site Images
+- `product-1.jpg` - First dessert product
+- `product-2.jpg` - Second dessert product
+- `product-3.jpg` - Third dessert product
+- `og-image.jpg` - Social media preview
+- `hero.jpg` - Optional hero background
 
----
+## 🚀 Deployment
 
-## 🎨 Design Excellence Standards
+This repository is configured for GitHub Pages deployment from the `/docs` directory.
 
-### Responsive Typography
-Use fluid type scales for seamless scaling:
+**Access URLs:**
+- Root: `https://[username].github.io/[repo-name]/`
+- Nordic Design: `https://[username].github.io/[repo-name]/design_style/`
+- Portfolio: `https://[username].github.io/[repo-name]/portfolio/`
+- Chocolate Site: `https://[username].github.io/[repo-name]/client_site/`
 
-```css
-:root {
-  /* Base: 16px at 320px viewport → 20px at 1400px */
-  font-size: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);
-}
+## ✅ Technical Compliance
 
-h1 {
-  /* Massive scale: 48px → 128px */
-  font-size: clamp(3rem, 2.07rem + 4.63vw, 8rem);
-}
-```
+All sites meet the following standards:
 
-**Tool:** [Fluid Type Scale Calculator](https://www.fluid-type-scale.com/)
+- ✅ One `<h1>` per page
+- ✅ Proper `<title>` and `<meta description>`
+- ✅ Semantic HTML (`<header>`, `<main>`, `<section>`, `<footer>`)
+- ✅ Accessibility features (skip links, ARIA labels, alt text)
+- ✅ Lighthouse-friendly (no heavy JS, no external fonts)
+- ✅ Responsive design
+- ✅ No frameworks or build tools required
+- ✅ Clean, human-readable code
 
-### Mobile-First Breakpoints
-```css
-/* Mobile: 320px - 768px (base styles) */
-body { font-size: 1rem; }
+## 📝 Calendar Feature (Client Site)
 
-/* Tablet: 768px - 1024px */
-@media (min-width: 768px) {
-  .container { padding: 0 40px; }
-}
+The chocolate dessert site includes a custom JavaScript calendar booking interface:
 
-/* Desktop: 1024px+ */
-@media (min-width: 1024px) {
-  .grid { grid-template-columns: repeat(12, 1fr); }
-}
-```
+**Features:**
+- Visual calendar grid with month navigation
+- Clickable date selection
+- Disabled past dates
+- Today indicator
+- Selected date display
+- Form integration
+- Keyboard accessible
+- No external services (Calendly, Zapier, etc.)
 
-### Color Contrast Requirements
-All text must meet **WCAG AA** standards:
-- Normal text: 4.5:1 contrast ratio minimum
-- Large text (18px+): 3:1 minimum
+**Implementation:** Pure JavaScript in `site.js` - fully self-contained
 
-**Check your colors:** [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
+## 🎯 Design Philosophy
 
-### Performance Budget
-| Metric | Target |
-|--------|--------|
-| First Contentful Paint | < 1.8s |
-| Largest Contentful Paint | < 2.5s |
-| Total Blocking Time | < 200ms |
-| Cumulative Layout Shift | < 0.1 |
+Each site demonstrates a distinct design approach:
+
+1. **Nordic Minimalism** - Restraint, whitespace, natural materials
+2. **Professional Portfolio** - Technical, confident, corporate
+3. **Premium Business** - Indulgent, conversion-focused, elegant
+
+## 📦 Dependencies
+
+**None.** All sites use:
+- Plain HTML
+- Plain CSS
+- Vanilla JavaScript (client site only)
+- System fonts
+- No external libraries or frameworks
+
+## 🔧 Maintenance
+
+To update content:
+1. Edit HTML files directly
+2. Replace images by filename
+3. Modify CSS for styling changes
+4. No build process required
+
+## 📄 License
+
+All rights reserved. Educational project.
 
 ---
 
-## ✅ Quality Gates & CI/CD
-
-### Lighthouse CI Scores
-All sites must achieve:
-- **Accessibility:** 100/100 ✅
-- **SEO:** 100/100 ✅
-- **Performance:** 90+ ⚠️
-- **Best Practices:** 90+ ⚠️
-
-### Pre-Commit Hooks
-```json
-// package.json
-{
-  "lint-staged": {
-    "*.html": "htmlhint",
-    "*.css": "stylelint"
-  }
-}
-```
-
-### GitHub Actions Workflow
-Your CI/CD pipeline will automatically:
-1. Lint HTML/CSS on every commit
-2. Run Lighthouse audits on every push
-3. Block merges if scores fall below thresholds
-
-**View the workflow:** [`.github/workflows/lighthouse-ci.yml`](.github/workflows/lighthouse-ci.yml)
-
----
-
-## 📊 Final Presentation
-
-### Format
-A **5-minute pitch deck** delivered as if you're presenting to a prospective client.
-
-### Required Slides
-
-#### 1. The Hook (30 seconds)
-Open with your unique value proposition:  
-*"I architect AI systems that don't just think—they work."*
-
-#### 2. Case Study: Personal Brand (1.5 min)
-- Show your portfolio site
-- Explain your brand archetype
-- Highlight one persuasion principle you used
-
-#### 3. Case Study: Client Work (1.5 min)
-- Present the client site
-- Identify the problem you solved
-- Show the sales funnel in action
-
-#### 4. Technical Mastery (1 min)
-- Display your Lighthouse scores
-- Briefly explain your CI/CD pipeline
-- Mention responsive design techniques
-
-#### 5. Course Learnings (30 seconds)
-Summarize your top 3 takeaways from IS117.
-
-#### 6. AI Collaboration Analysis (30 seconds)
-Include insights from asking your AI assistant:
-1. *"Describe our collaboration and my prompting strategy"*
-2. *"How can I improve my collaboration and prompting strategy?"*
-
-#### 7. Call to Action (30 seconds)
-End with: *"Let's schedule a 30-minute consultation to discuss your next project."*
-
-### Delivery Tips
-- Use Canva for professional visuals
-- Avoid bullet-point slides—use visuals
-- Practice to stay within 5 minutes
-
----
-
-## 📦 Submission Guidelines
-
-Submit via Canvas:
-
-1. **GitHub Repository URL**
-2. **Live Site URLs:**
-   - Landing page: `https://yourusername.github.io/your-repo/`
-   - Portfolio: `https://yourusername.github.io/your-repo/portfolio/`
-   - Design style: `https://yourusername.github.io/your-repo/design_style/`
-   - Client site: `https://yourusername.github.io/your-repo/client_site/`
-3. **Presentation Deck Link** (Google Slides, Canva, or PDF)
-4. **Self-Assessment Checklist** (complete all 5 checklists below)
-
----
-
-## 📋 Quality Checklists
-
-Before submitting, complete all checklists:
-
-- ✅ [**Accessibility Checklist**](./requirements/accessibility_checklist.md) - Ensure WCAG compliance
-- ✅ [**UI/UX Design Checklist**](./requirements/ui_ux_checklist.md) - Verify responsiveness & usability
-- ✅ [**Technical & SEO Checklist**](./requirements/technical_checklist.md) - Validate code & optimization
-- ✅ [**Legal & Compliance Checklist**](./requirements/legal_checklist.md) - Cover privacy & copyright
-- ✅ [**Presentation Checklist**](./requirements/presentation_checklist.md) - Prepare your pitch
-
----
-
-## 🚀 Getting Started
-
-1. **Fork this repository** (or create your own from scratch)
-2. **Study the example sites** in the `docs/` folder
-3. **Install dependencies:** `npm install`
-4. **Run local server:** `npm start` (or use Live Server extension)
-5. **Commit often** and let Husky catch errors early
-6. **Deploy to GitHub Pages** via Settings → Pages → Source: `main` branch, `/docs` folder
-
----
-
-## 💡 Pro Tips
-
-- **Start with mobile design first** - It's easier to scale up than down
-- **Use CSS variables** for consistent theming
-- **Comment your code** - Future you will thank you
-- **Test on real devices** - Browser DevTools aren't enough
-- **Ask your AI assistant for code reviews** - It's like having a senior dev on call
-
----
-
-## 🎓 Learning Outcomes
-
-By completing this project, you will:
-- ✅ Master responsive design with fluid typography
-- ✅ Implement professional CI/CD pipelines
-- ✅ Build accessible, SEO-optimized websites
-- ✅ Integrate third-party APIs (Zapier, Calendly)
-- ✅ Position yourself strategically in the job market
-- ✅ Create a portfolio that opens doors
-
----
-
-## 📞 Need Help?
-
-- **Office Hours:** Check Canvas for schedule
-- **Discord:** Join the class server for peer support
-- **AI Assistant:** Use ChatGPT/Claude for code reviews and debugging
-
-**Remember:** This project is your portfolio. Make it something you're proud to show employers.
-
----
-
-<div align="center">
-
-**Good luck! 🚀**
-
-*"The best way to predict the future is to design it."*  
-— Buckminster Fuller
-
-</div>
+**Last Updated:** December 16, 2025

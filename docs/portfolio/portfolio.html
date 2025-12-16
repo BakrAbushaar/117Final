@@ -1,58 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Work | Alex Chen</title>
-    <meta name="description" content="Case studies of AI and web development projects by Alex Chen." />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Bakr Abushaar</title>
+    <meta name="description" content="Cybersecurity and IT projects by Bakr Abushaar - network security implementations, vulnerability assessments, and infrastructure projects.">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo">ALEX CHEN.</a>
+                <a href="index.html" class="logo">BAKR ABUSHAAR</a>
                 <div class="nav-links">
                     <a href="index.html">Home</a>
-                    <a href="portfolio.html">Work</a>
+                    <a href="portfolio.html">Projects</a>
                     <a href="index.html#contact">Contact</a>
                 </div>
             </nav>
         </div>
     </header>
 
-    <main class="container">
+    <main id="main-content" class="container">
         
-        <section>
-            <h1>Selected Work.</h1>
-        </section>
-
-        <!-- Project 1: Design Style Site -->
-        <section>
-            <div class="project-image">
-                <img src="images/project-swiss-style.jpg" alt="Website mockup showcasing Swiss International Style design history site with minimalist black and white layout, geometric grid system, and Helvetica typography" style="width: 100%; border: 1px solid #000; border-radius: 4px;" />
-            </div>
-            <div class="project-info">
-                <h2>Swiss Style History</h2>
-                <p><strong>Role:</strong> Designer & Developer</p>
-                <p>A digital museum piece dedicated to the International Typographic Style. This project explores the rigorous grid systems and objective clarity that defined mid-century graphic design.</p>
-                <p><em>Tech Stack: HTML, CSS, Grid Layout</em></p>
-                <a href="../design_style/index.html" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+        <section class="page-header">
+            <div class="section-header">
+                <h1>Featured Projects</h1>
+                <p>A selection of cybersecurity and infrastructure projects demonstrating technical expertise and problem-solving capabilities.</p>
             </div>
         </section>
 
-        <!-- Project 2: Client Site -->
-        <section>
-            <div class="project-image">
-                <img src="images/project-greenleaf.jpg" alt="Website mockup of GreenLeaf Landscaping business site featuring green color scheme, hero section with lawn imagery, service cards, and call-to-action buttons" style="width: 100%; border: 1px solid #000; border-radius: 4px;" />
+        <!-- Project 1 -->
+        <section class="project-showcase">
+            <div class="project-content">
+                <div class="project-meta">
+                    <span class="project-tag">Network Security</span>
+                    <span class="project-date">2024</span>
+                </div>
+                <h2>Enterprise Network Security Architecture</h2>
+                <p class="project-description">Designed and implemented a comprehensive network security infrastructure for a mid-sized organization, including perimeter defense, internal segmentation, and secure remote access capabilities.</p>
+                
+                <div class="project-details">
+                    <div class="detail-section">
+                        <h3>Challenge</h3>
+                        <p>The organization had a flat network architecture with minimal security controls, making them vulnerable to lateral movement and data exfiltration in case of breach.</p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Solution</h3>
+                        <p>Implemented a zero-trust network architecture with:</p>
+                        <ul class="project-list">
+                            <li>Next-generation firewall deployment (Cisco ASA)</li>
+                            <li>Network segmentation using VLANs</li>
+                            <li>Intrusion Detection System (Snort)</li>
+                            <li>Secure VPN for remote access</li>
+                            <li>Centralized logging and monitoring</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Results</h3>
+                        <p>Reduced attack surface by 75%, achieved 99.9% uptime, and enabled secure remote work for 200+ employees with zero security incidents in first year.</p>
+                    </div>
+                </div>
+                
+                <div class="tech-stack">
+                    <h4>Technologies Used</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Cisco ASA</span>
+                        <span class="tech-tag">Snort IDS</span>
+                        <span class="tech-tag">VLANs</span>
+                        <span class="tech-tag">IPSec VPN</span>
+                        <span class="tech-tag">Syslog</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
             </div>
-            <div class="project-info">
-                <h2>GreenLeaf Landscaping</h2>
-                <p><strong>Role:</strong> Product Engineer</p>
-                <p>A conversion-focused business website for a local landscaping firm. Features a custom sales funnel and automated quote request system to streamline lead generation.</p>
-                <p><em>Tech Stack: HTML, CSS, Zapier Integration</em></p>
-                <a href="../client_site/index.html" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+            <div class="project-image">
+                <img src="images/project-1.jpg" alt="Network security infrastructure diagram showing firewall configuration, network segmentation, and security zones">
+            </div>
+        </section>
+
+        <!-- Project 2 -->
+        <section class="project-showcase project-reverse">
+            <div class="project-content">
+                <div class="project-meta">
+                    <span class="project-tag">Security Assessment</span>
+                    <span class="project-date">2023</span>
+                </div>
+                <h2>Vulnerability Assessment & Remediation Program</h2>
+                <p class="project-description">Developed and executed a comprehensive vulnerability management program including automated scanning, manual penetration testing, and a prioritized remediation roadmap.</p>
+                
+                <div class="project-details">
+                    <div class="detail-section">
+                        <h3>Challenge</h3>
+                        <p>Organization lacked visibility into security vulnerabilities across their infrastructure and applications, with no systematic approach to identifying and addressing risks.</p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Solution</h3>
+                        <p>Implemented a multi-layered assessment approach:</p>
+                        <ul class="project-list">
+                            <li>Automated vulnerability scanning (Nessus)</li>
+                            <li>Manual penetration testing of critical systems</li>
+                            <li>Web application security testing (OWASP)</li>
+                            <li>Risk-based prioritization framework</li>
+                            <li>Remediation tracking and verification</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Results</h3>
+                        <p>Identified and remediated 300+ vulnerabilities, including 15 critical and 45 high-severity issues. Reduced overall risk score by 68% within six months.</p>
+                    </div>
+                </div>
+                
+                <div class="tech-stack">
+                    <h4>Technologies Used</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Nessus</span>
+                        <span class="tech-tag">Metasploit</span>
+                        <span class="tech-tag">OWASP ZAP</span>
+                        <span class="tech-tag">Burp Suite</span>
+                        <span class="tech-tag">Kali Linux</span>
+                        <span class="tech-tag">Python Scripts</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="images/project-2.jpg" alt="Security dashboard showing vulnerability scan results, risk metrics, and remediation progress">
+            </div>
+        </section>
+
+        <!-- Additional Projects Summary -->
+        <section class="additional-projects">
+            <div class="section-header">
+                <h2>Additional Experience</h2>
+                <p>Other projects and implementations</p>
+            </div>
+            
+            <div class="mini-projects">
+                <div class="mini-project-card">
+                    <h3>Cloud Security Implementation</h3>
+                    <p>Designed and deployed secure AWS infrastructure with IAM policies, security groups, and CloudTrail monitoring for compliance.</p>
+                    <span class="mini-tag">AWS • Security Groups • IAM</span>
+                </div>
+                
+                <div class="mini-project-card">
+                    <h3>Incident Response Planning</h3>
+                    <p>Developed comprehensive incident response procedures, runbooks, and conducted tabletop exercises for security team.</p>
+                    <span class="mini-tag">IR Planning • Documentation • Training</span>
+                </div>
+                
+                <div class="mini-project-card">
+                    <h3>Security Awareness Program</h3>
+                    <p>Created and delivered security awareness training program, reducing phishing susceptibility by 80%.</p>
+                    <span class="mini-tag">Training • Phishing Sim • Awareness</span>
+                </div>
+                
+                <div class="mini-project-card">
+                    <h3>Backup & Disaster Recovery</h3>
+                    <p>Implemented automated backup solution with offsite replication, achieving 4-hour RTO and 1-hour RPO.</p>
+                    <span class="mini-tag">Veeam • Replication • DR</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Interested in Working Together?</h2>
+                <p>Let's discuss how I can help strengthen your organization's security posture.</p>
+                <a href="index.html#contact" class="btn btn-large">Get in Touch</a>
             </div>
         </section>
 
@@ -61,35 +182,16 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Alex Chen. All rights reserved.</p>
-                <div>
-                    <a href="#">Privacy Policy</a>
+                <div class="footer-left">
+                    <p class="footer-name">Bakr Abushaar</p>
+                    <p class="footer-tagline">Cybersecurity & IT Professional</p>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2025 Bakr Abushaar. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script>
-        // Intersection Observer for Fade-in Animation
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Only animate once
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
-        });
-    </script>
 
 </body>
 </html>
